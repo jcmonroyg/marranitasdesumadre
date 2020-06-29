@@ -59,7 +59,7 @@ input[type=checkbox]:checked ~ #menu{display: block;}
 
 .column {width:300px;display:inline-block;margin-bottom: 16px;}
 
-.minicuadro {color: white  ;background-color:rgba(209,64,225, 0.7);text-align:center;padding:20px;text-align: justify; display:inline-block;width:300px;margin:10px;}
+.minicuadro {color: #E2768A  ;background-color:rgba(255, 255, 255, 0.834);text-align:center;padding:0px 20px 20px 20px;text-align: justify; display:inline-block;width:200px;margin:5px;}
 
 .minicuadro_doble {color:white;background-color:rgba(209,64,225, 0.7);text-align:center;padding:20px;text-align: justify; display:inline-block;width:600px;}
 
@@ -115,8 +115,7 @@ div {width:100%}
 
 .container { text-align:center; clear:both;}
 
-
-
+.padANDmargin {padding:10px;margin:10px;}
 
 
 

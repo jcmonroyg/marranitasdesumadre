@@ -17,10 +17,16 @@ except:
 
 html = open("HTML raw", "w+")
 
+numbs = 0
+
 for i in a:
     if i[-3:] == "jpg":
         html.write( '<img src="pics/'  )        
         html.write( i )
-        html.write( ' " style=" width:250px ;" > ' )
+        html.write( '" style=" width:300px ; padding:30px;" > ' )
         html.write( '\n' )
+        numbs=numbs+1
+        print(numbs)      
+html.close()
+print(numbs)
     

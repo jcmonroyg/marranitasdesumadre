@@ -17,6 +17,8 @@ except:
 
 html = open("HTML raw", "w+")
 
+folders.sort()
+
 numbs = 0
 for folder in folders:
     print(folder)
@@ -24,19 +26,19 @@ for folder in folders:
         a = listdir(folder) 
         html.write( '<div ' )
         html.write( 'id="' )
-        html.write( folder[:3] )
+        html.write( folder[1:4] )
         html.write( '" style="background-color: #E2768A">' )                    
         html.write( '<h1 style="text-align:center;color:white;">')
-        html.write( folder )
+        html.write( folder[1:] )
         html.write( '</h1> </div> ' )
                 
         for i in a:
             if i[-3:] == "jpg":
-                html.write( '<img src="pics/' )
+                html.write( '<img class="border" src="pics/' )
                 html.write( folder )
                 html.write( '/' )
                 html.write( i )
-                html.write( '" loading="lazy" style=" width:300px ; padding:10px;" > ' )
+                html.write( '" style=" width:300px ; padding:10px;" > ' )
                 html.write( '\n' )
                 numbs=numbs+1
                 print(numbs)

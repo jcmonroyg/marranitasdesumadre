@@ -18,14 +18,14 @@ li a {background-color: #FFD2D7;color: #E2768A;
     margin:0px;display: block;z-index: 100;}
 
 /*Hover state for top level links*/
-li:hover a {background-color: #FF33D4; color:white;}
+li:hover a {background-color: #E2768A ; color:white;}
 
 /*Style for dropdown links*/
-li:hover ul a {background-color: #E2768A;color:#FFD2D7;
+li:hover ul a {background-color: #E2768A ;color:white;
     height:40px;line-height: 40px;}
 
 /*Hover state for dropdown links*/
-li:hover ul a:hover {background-color: #FF33D4; color:white;}
+li:hover ul a:hover {background-color: pink ; color:white;}
 
 /*Hide dropdown links until they are needed*/
 li ul {display: none;}
@@ -117,5 +117,6 @@ div {width:100%}
 
 .padANDmargin {padding:10px;margin:10px;}
 
-
+.border { background:pink;}
+.bor { border:10px;border-color:pink; border-style:solid;}
 

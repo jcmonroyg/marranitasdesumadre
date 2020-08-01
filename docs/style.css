@@ -90,7 +90,7 @@ input[type=checkbox]:checked ~ #menu{display: block;}
   background-size: cover;
 }
 
-
+.cuatro { min-height:300px ; background-color:white; vertical-align:bottom; }
 
 h1 {color:#E2768A}
 
@@ -119,4 +119,11 @@ div {width:100%}
 
 .border { background:pink;}
 .bor { border:10px;border-color:pink; border-style:solid;}
+
+@font-face {
+    font-family: 'fond';
+    src: url('font.ttf');
+}
+html { font-family:fond }
+
 

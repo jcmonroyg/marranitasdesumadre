@@ -24,6 +24,7 @@ for folder in folders:
     print(folder)
     try:
         a = listdir(folder) 
+        a.sort()
         html.write( '<div ' )
         html.write( 'id="' )
         html.write( folder[1:4] )
@@ -33,7 +34,7 @@ for folder in folders:
         html.write( '</h1> </div> ' )
                 
         for i in a:
-            if i[-3:] == "jpg":
+            if i[-3:] == "jpg" or i[-4:] == "jpeg":
                 html.write( '<img class="border" src="pics/' )
                 html.write( folder )
                 html.write( '/' )
